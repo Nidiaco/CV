@@ -18,6 +18,11 @@ body {
     font-weight: 400;
     margin-bottom: 30px;
   }  
+
+  .thoughts{
+    padding-left: 45px;
+  }
+
   .jumbotron {
     background-color: #f0680e;
     color: #fff;
