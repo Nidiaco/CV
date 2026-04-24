@@ -1,269 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-  <title>Nicolas Diacono Portfolio</title>
+  <title>Nicolas Diacono | Systems Technician & Electrician</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="Style.css">
+  <meta name="description" content="Nicolas Diacono - Systems Technician and Qualified Electrician based in Christchurch, New Zealand. Specializing in solar energy systems and microinverter engineering.">
 
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="Style.css">
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<nav class="navbar navbar-default navbar-fixed-top">
+<body id="myPage" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+<!-- Navbar -->
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      
-    </div>
+    <a class="navbar-brand" href="#myPage">ND</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#wi">WORK HISTORY</a></li>
-        <li><a href="#quality">TOP QUALITIES</a></li>
-        <li><a href="#roa">RECORD OF ACHIEVEMENT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#qualities">Qualities</a></li>
+        <li class="nav-item"><a class="nav-link" href="#roa">Credentials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Nicolas Diacono</h1> 
-  <p>Systems Technician</p> 
-  <p>Qualified Electrician</p> 
-  <form>
-    
-      </div>
+<!-- Hero Section -->
+<header id="hero" class="hero-section d-flex align-items-center">
+  <div class="hero-overlay"></div>
+  <div class="hero-particles">
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+  </div>
+  <div class="container position-relative z-2 text-center">
+    <p class="hero-greeting fade-in">Hello, I'm</p>
+    <h1 class="hero-name fade-in delay-1">Nicolas Diacono</h1>
+    <div class="hero-titles fade-in delay-2">
+      <span class="hero-badge">Systems Technician</span>
+      <span class="hero-badge">Qualified Electrician</span>
     </div>
-  </form>
-</div>
-
-<!--(About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col sm-8">
-      <h2>About me</h2><br>
-      <h4>Hi, I'm Nicolas Diacono a Systems Technician and qualified Electrician based in Christchurch, New Zealand. I work in Systems Microinverter Engineering, where I combine hands on experience with technical insight to support the development and deployment of cutting edge solar technologies.</h4><br>
-      <p>With a strong foundation in residential and commercial PV system installation, I've transitioned into a more technical role focused on automation, productivity tools, and test case generation using Python. I enjoy building intuitive GUI tools that streamline workflows and enhance engineering efficiency.</p>
-      <p>Outside of work, I'm passionate about fitness, surfing, and outdoor activities. I love learning new technologies and spending quality time with my friends and family. Whether I'm solving engineering challenges or exploring the outdoors, I'm always driven by curiosity and a desire to improve.</p>
+    <p class="hero-tagline fade-in delay-3">
+      <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+    </p>
+    <div class="hero-cta fade-in delay-4">
+      <a href="#about" class="btn btn-hero-primary">Learn More</a>
+      <a href="#contact" class="btn btn-hero-outline">Get in Touch</a>
     </div>
   </div>
-</div>
+  <div class="hero-scroll-indicator fade-in delay-4">
+    <a href="#about"><i class="bi bi-chevron-double-down"></i></a>
+  </div>
+</header>
 
-<div id="wi" class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-2">
-      <i class="bi bi-person-arms-up" style="font-size: 300px; color: #3c4cd8; margin-left: -50px;"></i>
-    </div>
-    <div class="col-sm-8">
-      <h2>Recent Work Hisotry </h2><br>
-      <h4><strong>Enphase Energy - System's Technician
-      <h4>October 2022 - Present</h4>
-      </strong>Hands on specialist in residential and small commercial energy systems, combining electrical expertise with system design and testing. I support engineers in developing and commissioning solar based power management solutions, leveraging real world installation experience to optimize workflows. My role includes selecting and assembling test equipment, performing single and three phase installations, and contributing to system performance evaluations.</h4><br>
-      <p><strong>PERSONAL EXPERIENCE :</strong> Since joining the team, I've grown immensely in both electrical and IT domains. I've become familiar with compliance equipment like grid simulators, load simulators, oscilloscopes, and high resolution power analyzers, which has deepened my understanding of system performance and diagnostics. I've designed and wired testing racks for upcoming products, developed automated test cases using Python, and built a custom Python GUI tool to manage inventory efficiently. My role also includes procurement, equipment maintenance, and working directly with sales representatives. I've gained hands on experience modifying PCB designs, soldering components, and replacing electronic parts. To keep advancing my IT skills, I completed a 100 day Python course on Udemy, which has empowered me to integrate automation and software tools into our engineering workflows.</p>
-        <br>
-        <br>
-        <h4><strong>Innovationz Electrical - Senior Electrician/Solar Specialist 
-        <h4>June 2020 - October 2022</h4>
-        </strong>As a Senior Electrician and Solar Specialist, I lead the installation, maintenance, and optimization of residential and commercial solar energy systems. My role involves designing and implementing efficient solar solutions, performing advanced electrical work including single and three phase systems, and ensuring compliance with safety and industry standards.</h4><br>
-      <p><strong>PERSONAL EXPERIENCE:</strong>In this role, I was responsible for leading solar installations across industrial and commercial sites, from initial planning through to final commissioning. I organized and prepared all necessary equipment and materials, coordinated with teams on site, and ensured that installations were completed safely, efficiently, and in compliance with relevant standards and documentation requirements.
-        My responsibilities included managing the full lifecycle of solar projects—designing system layouts, performing electrical installations, and conducting commissioning tests. I also handled the associated paperwork, including compliance documentation, system reports, and installation records. This role strengthened my leadership, planning, and technical skills, and gave me a solid foundation in managing solar projects end to end.</p>
-        <br>
-        <br>
-      <h4><strong>Solar City - Senior Electrician/Installation supervisor 
-        <h4>June 2018 - October 2020</h4>
-        </strong>Responsible for leading the installation team in delivering residential and small commercial solar projects across both the North and South Island. This role involved coordinating logistics, preparing equipment and materials, and overseeing on site installations to ensure timely and compliant execution.
-        Key duties included fault finding, servicing, and commissioning of solar systems, with a strong focus on safety, performance, and customer satisfaction. The position required close interaction with clients to ensure a smooth installation experience, as well as completion of all necessary compliance documentation and project records.</h4><br>
-      <p><strong>PERSONAL EXPERIENCE:</strong>This position allowed me to develop strong leadership and project coordination skills. I gained hands on experience managing installations end to end from preparing equipment and materials to final commissioning and customer handover. I became confident in diagnosing and resolving system faults, and I took pride in ensuring every customer felt informed and supported throughout the process. Working across both islands gave me exposure to a wide range of site conditions and system configurations, which strengthened my adaptability and technical problem solving. It was a rewarding role that deepened my passion for renewable energy and customer focused service.</p>
-        <br>
-        <br>
-      <h4><strong>Jace Electrical - Electrician
-        <h4>2016 - 2018</h4>
-        </strong>Responsible for managing the service department of a Rolleston based electrical company, overseeing residential and commercial service work, as well as electrical installations in new housing developments. The role included planning and executing service jobs, coordinating with clients and contractors, and ensuring compliance with electrical standards and safety regulations. Additional responsibilities involved the installation and configuration of home automation systems, contributing to modern smart home solutions.</h4><br>
-      <p><strong>PERSONAL EXPERIENCE:</strong>In this role, I gained valuable experience managing a diverse range of electrical service tasks, from troubleshooting and repairs to full installations in new builds. Leading the service department allowed me to refine my organizational and communication skills, ensuring smooth coordination between clients, suppliers, and technicians. I also became familiar with home automation technologies, integrating smart systems into residential projects. This position strengthened my ability to work independently, solve problems efficiently, and deliver high quality service across varied environments.</p>
-        <br>
-        <br>
-      <h4><strong>Owl Electrical - Apprentice/ Electrician
-        <h4>2013 - 2016</h4>
-        </strong>Provided electrical services across commercial and domestic sectors for an Auckland based electrical company, working alongside major industry partners such as Fletcher Construction and Foodstuffs. Responsibilities included installation, maintenance, and fault diagnosis of electrical systems in both new and existing buildings. The role required adherence to safety regulations, efficient project execution, and collaboration with contractors and clients to deliver highquality electrical solutions.</h4><br>
-      <p><strong>PERSONAL EXPERIENCE:</strong>While working for this company, I completed my electrical apprenticeship in just three years and became a registered electrician. I achieved 80% in Electricians Theory and 81% in Electrical Regulations, reflecting my strong technical foundation and commitment to excellence. This role gave me broad exposure to complex commercial projects and diverse residential work, helping me build confidence, precision, and professionalism in the field.</p>
+<!-- About Section -->
+<section id="about" class="section-padding">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+        <div class="about-icon-wrapper slide-up">
+          <i class="bi bi-person-gear"></i>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="slide-up">
+          <h6 class="section-subtitle">Who I Am</h6>
+          <h2 class="section-title">About Me</h2>
+          <p class="lead-text">Hi, I'm Nicolas Diacono &mdash; a Systems Technician and qualified Electrician based in Christchurch, New Zealand. I work in Microinverter Engineering, where I combine hands-on experience with technical insight to support the development and deployment of cutting-edge solar technologies.</p>
+          <p>With a strong foundation in residential and commercial PV system installation, I've transitioned into a more technical role focused on automation, productivity tools, and test case generation using Python. I enjoy building intuitive GUI tools that streamline workflows and enhance engineering efficiency.</p>
+          <p>Outside of work, I'm passionate about fitness, surfing, and outdoor activities. I love learning new technologies and spending quality time with my friends and family. Whether I'm solving engineering challenges or exploring the outdoors, I'm always driven by curiosity and a desire to improve.</p>
+          <div class="about-stats">
+            <div class="stat-item slide-up">
+              <span class="stat-number" data-count="10" data-suffix="+">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item slide-up">
+              <span class="stat-number" data-count="5" data-suffix="">0</span>
+              <span class="stat-label">Companies</span>
+            </div>
+            <div class="stat-item slide-up">
+              <span class="stat-number">E268825</span>
+              <span class="stat-label">NZ Electrician Reg.</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-
-
-<!--(ROA Dowload section) -->
-<div id="roa" class="container-fluid text-center">
-      <h2>New Zealand Record of Achievement</h2><br>
-      <h6>
-        <a href="ROA/ROA_Nicolas_Diacono.pdf" download target="_blank" rel="noopener noreferrert-size: 32px; color: #f0680e; vertical-align: middle;"></i>
-          <span style="font-size: 35px; margin-left: 10px; color: #f0680e;">Click here to download PDF</span>
-        </a>
-      </h6><br>
-</div>
-
-  
-
-<!--(Quality sections) -->
-<div id="quality" class="container-fluid text-center">
-  <h2>Top Qualities</h2>
- 
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <i class="bi bi-emoji-smile-fill" style="font-size: 50px; color: #f0680e;;"></i>
-      <h4>POSITIVE ATTITUDE</h4>
-      <p>Confident but friendly approach with ability to work unsupervised and complete tasks effectively</p>
+<!-- Skills Section -->
+<section id="skills" class="section-padding bg-light">
+  <div class="container">
+    <div class="text-center mb-5 slide-up">
+      <h6 class="section-subtitle">My Toolkit</h6>
+      <h2 class="section-title">Skills &amp; Technologies</h2>
     </div>
-    <div class="col-sm-4">
-      <i class="bi bi-book-fill" style="font-size: 50px; color:#3c4cd8;"></i>
-      <h4>CERTIFIED</h4>
-      <p>New Zealand Qualified Electrician E268825</p>
-    </div>
-    <div class="col-sm-4">
-      <i class="bi bi-check-circle-fill" style="font-size: 50px; color: #f0680e;"></i>
-      <h4>JOB DONE</h4>
-      <p>Proactive problem solver with strong attention to detail</p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-5 col-md-6 slide-up">
+        <h6 class="skill-category">Technical Skills</h6>
+        <div class="skill-bar-item">
+          <div class="skill-info"><span>Electrical Systems (Single &amp; Three Phase)</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-info"><span>Solar PV Installation &amp; Commissioning</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-info"><span>Python (Automation &amp; GUI Tools)</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-info"><span>Test Equipment &amp; Diagnostics</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-info"><span>PCB Modification &amp; Soldering</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 slide-up">
+        <h6 class="skill-category">Tools &amp; Platforms</h6>
+        <div class="tech-tags">
+          <span class="tech-tag"><i class="bi bi-lightning-charge-fill"></i> Grid Simulators</span>
+          <span class="tech-tag"><i class="bi bi-activity"></i> Oscilloscopes</span>
+          <span class="tech-tag"><i class="bi bi-speedometer2"></i> Power Analyzers</span>
+          <span class="tech-tag"><i class="bi bi-filetype-py"></i> Python</span>
+          <span class="tech-tag"><i class="bi bi-git"></i> Git</span>
+          <span class="tech-tag"><i class="bi bi-pc-display"></i> Windows / Linux</span>
+          <span class="tech-tag"><i class="bi bi-tools"></i> Load Simulators</span>
+          <span class="tech-tag"><i class="bi bi-motherboard"></i> Microinverters</span>
+          <span class="tech-tag"><i class="bi bi-clipboard-data"></i> Compliance Testing</span>
+          <span class="tech-tag"><i class="bi bi-box-seam"></i> Procurement</span>
+          <span class="tech-tag"><i class="bi bi-sun-fill"></i> Solar Design</span>
+          <span class="tech-tag"><i class="bi bi-house-gear-fill"></i> Home Automation</span>
+        </div>
+      </div>
     </div>
   </div>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <i class="bi bi-tree-fill" style="font-size: 50px; color: #3c4cd8;"></i>
-      <h4>GREEN</h4>
-      <p>Passionate about renewable energy combined with technology innovation</p>
+</section>
+
+<!-- Work Experience Timeline -->
+<section id="experience" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5 slide-up">
+      <h6 class="section-subtitle">My Journey</h6>
+      <h2 class="section-title">Work Experience</h2>
     </div>
-    <div class="col-sm-4">
-      <i class= "bi bi-laptop-fill" style="font-size: 50px; color: #f0680e;;"></i>
-      <h4>Skilled</h4>
-      <p>Proficient in Python and well-versed in IT systems, tools, and technologies.</p>
-    </div>
-    <div class="col-sm-4">
-      <i class="bi bi-wrench-adjustable" style="font-size: 50px; color:#3c4cd8;"></i>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Dedicated and hands-on, with a strong work ethic and commitment to quality outcomes.</p>
+
+    <div class="timeline">
+      <!-- Enphase Energy -->
+      <div class="timeline-item slide-up">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h4 class="timeline-company">Enphase Energy</h4>
+            <span class="timeline-role">Systems Technician</span>
+            <span class="timeline-date"><i class="bi bi-calendar3"></i> October 2022 &mdash; Present</span>
+          </div>
+          <p>Hands-on specialist in residential and small commercial energy systems, combining electrical expertise with system design and testing. I support engineers in developing and commissioning solar-based power management solutions, leveraging real-world installation experience to optimize workflows. My role includes selecting and assembling test equipment, performing single and three-phase installations, and contributing to system performance evaluations.</p>
+          <div class="timeline-details">
+            <button class="btn btn-sm btn-outline-details" type="button" data-bs-toggle="collapse" data-bs-target="#enphaseDetails">
+              <i class="bi bi-plus-circle me-1"></i>Personal Experience
+            </button>
+            <div class="collapse mt-3" id="enphaseDetails">
+              <div class="detail-card">
+                <p>Since joining the team, I've grown immensely in both electrical and IT domains. I've become familiar with compliance equipment like grid simulators, load simulators, oscilloscopes, and high-resolution power analyzers, which has deepened my understanding of system performance and diagnostics. I've designed and wired testing racks for upcoming products, developed automated test cases using Python, and built a custom Python GUI tool to manage inventory efficiently. My role also includes procurement, equipment maintenance, and working directly with sales representatives. I've gained hands-on experience modifying PCB designs, soldering components, and replacing electronic parts. To keep advancing my IT skills, I completed a 100-day Python course on Udemy, which has empowered me to integrate automation and software tools into our engineering workflows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Innovationz Electrical -->
+      <div class="timeline-item slide-up">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h4 class="timeline-company">Innovationz Electrical</h4>
+            <span class="timeline-role">Senior Electrician / Solar Specialist</span>
+            <span class="timeline-date"><i class="bi bi-calendar3"></i> June 2020 &mdash; October 2022</span>
+          </div>
+          <p>As a Senior Electrician and Solar Specialist, I led the installation, maintenance, and optimization of residential and commercial solar energy systems. My role involved designing and implementing efficient solar solutions, performing advanced electrical work including single and three-phase systems, and ensuring compliance with safety and industry standards.</p>
+          <div class="timeline-details">
+            <button class="btn btn-sm btn-outline-details" type="button" data-bs-toggle="collapse" data-bs-target="#innovationzDetails">
+              <i class="bi bi-plus-circle me-1"></i>Personal Experience
+            </button>
+            <div class="collapse mt-3" id="innovationzDetails">
+              <div class="detail-card">
+                <p>In this role, I was responsible for leading solar installations across industrial and commercial sites, from initial planning through to final commissioning. I organized and prepared all necessary equipment and materials, coordinated with teams on-site, and ensured that installations were completed safely, efficiently, and in compliance with relevant standards and documentation requirements. My responsibilities included managing the full lifecycle of solar projects &mdash; designing system layouts, performing electrical installations, and conducting commissioning tests. I also handled the associated paperwork, including compliance documentation, system reports, and installation records. This role strengthened my leadership, planning, and technical skills, and gave me a solid foundation in managing solar projects end to end.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solar City -->
+      <div class="timeline-item slide-up">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h4 class="timeline-company">Solar City</h4>
+            <span class="timeline-role">Senior Electrician / Installation Supervisor</span>
+            <span class="timeline-date"><i class="bi bi-calendar3"></i> June 2018 &mdash; June 2020</span>
+          </div>
+          <p>Responsible for leading the installation team in delivering residential and small commercial solar projects across both the North and South Island. This role involved coordinating logistics, preparing equipment and materials, and overseeing on-site installations to ensure timely and compliant execution. Key duties included fault finding, servicing, and commissioning of solar systems, with a strong focus on safety, performance, and customer satisfaction.</p>
+          <div class="timeline-details">
+            <button class="btn btn-sm btn-outline-details" type="button" data-bs-toggle="collapse" data-bs-target="#solarcityDetails">
+              <i class="bi bi-plus-circle me-1"></i>Personal Experience
+            </button>
+            <div class="collapse mt-3" id="solarcityDetails">
+              <div class="detail-card">
+                <p>This position allowed me to develop strong leadership and project coordination skills. I gained hands-on experience managing installations end to end from preparing equipment and materials to final commissioning and customer handover. I became confident in diagnosing and resolving system faults, and I took pride in ensuring every customer felt informed and supported throughout the process. Working across both islands gave me exposure to a wide range of site conditions and system configurations, which strengthened my adaptability and technical problem-solving. It was a rewarding role that deepened my passion for renewable energy and customer-focused service.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jace Electrical -->
+      <div class="timeline-item slide-up">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h4 class="timeline-company">Jace Electrical</h4>
+            <span class="timeline-role">Electrician</span>
+            <span class="timeline-date"><i class="bi bi-calendar3"></i> 2016 &mdash; 2018</span>
+          </div>
+          <p>Responsible for managing the service department of a Rolleston-based electrical company, overseeing residential and commercial service work, as well as electrical installations in new housing developments. Additional responsibilities involved the installation and configuration of home automation systems, contributing to modern smart home solutions.</p>
+          <div class="timeline-details">
+            <button class="btn btn-sm btn-outline-details" type="button" data-bs-toggle="collapse" data-bs-target="#jaceDetails">
+              <i class="bi bi-plus-circle me-1"></i>Personal Experience
+            </button>
+            <div class="collapse mt-3" id="jaceDetails">
+              <div class="detail-card">
+                <p>In this role, I gained valuable experience managing a diverse range of electrical service tasks, from troubleshooting and repairs to full installations in new builds. Leading the service department allowed me to refine my organizational and communication skills, ensuring smooth coordination between clients, suppliers, and technicians. I also became familiar with home automation technologies, integrating smart systems into residential projects. This position strengthened my ability to work independently, solve problems efficiently, and deliver high-quality service across varied environments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Owl Electrical -->
+      <div class="timeline-item slide-up">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h4 class="timeline-company">Owl Electrical</h4>
+            <span class="timeline-role">Apprentice / Electrician</span>
+            <span class="timeline-date"><i class="bi bi-calendar3"></i> 2013 &mdash; 2016</span>
+          </div>
+          <p>Provided electrical services across commercial and domestic sectors for an Auckland-based electrical company, working alongside major industry partners such as Fletcher Construction and Foodstuffs. Responsibilities included installation, maintenance, and fault diagnosis of electrical systems in both new and existing buildings.</p>
+          <div class="timeline-details">
+            <button class="btn btn-sm btn-outline-details" type="button" data-bs-toggle="collapse" data-bs-target="#owlDetails">
+              <i class="bi bi-plus-circle me-1"></i>Personal Experience
+            </button>
+            <div class="collapse mt-3" id="owlDetails">
+              <div class="detail-card">
+                <p>While working for this company, I completed my electrical apprenticeship in just three years and became a registered electrician. I achieved 80% in Electricians Theory and 81% in Electrical Regulations, reflecting my strong technical foundation and commitment to excellence. This role gave me broad exposure to complex commercial projects and diverse residential work, helping me build confidence, precision, and professionalism in the field.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- (Portfolio Section) -->
-<div id="work_experience" class="container-fluid text-center bg-grey">
-  <h2>WORK EXPERIENCE</h2><br>
-  
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="Pics/solar.jpg" alt=" Enphase energy Company" >
-        <p><strong>Enphase Energy</strong></p>
-        <p>System's Technician</p>
-        <p>Present - October 2022</p>
+<!-- Top Qualities Section -->
+<section id="qualities" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5 slide-up">
+      <h6 class="section-subtitle">What I Bring</h6>
+      <h2 class="section-title">Top Qualities</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 slide-up stagger-1">
+        <div class="quality-card">
+          <div class="quality-icon quality-icon-orange">
+            <i class="bi bi-emoji-smile-fill"></i>
+          </div>
+          <h5>Positive Attitude</h5>
+          <p>Confident but friendly approach with ability to work unsupervised and complete tasks effectively.</p>
+        </div>
+      </div>
+      <div class="col-md-4 slide-up stagger-2">
+        <div class="quality-card">
+          <div class="quality-icon quality-icon-blue">
+            <i class="bi bi-book-fill"></i>
+          </div>
+          <h5>Certified Professional</h5>
+          <p>New Zealand Qualified Electrician &mdash; Registration E268825.</p>
+        </div>
+      </div>
+      <div class="col-md-4 slide-up stagger-3">
+        <div class="quality-card">
+          <div class="quality-icon quality-icon-orange">
+            <i class="bi bi-check-circle-fill"></i>
+          </div>
+          <h5>Gets the Job Done</h5>
+          <p>Proactive problem solver with strong attention to detail and quality outcomes.</p>
+        </div>
+      </div>
+      <div class="col-md-4 slide-up stagger-4">
+        <div class="quality-card">
+          <div class="quality-icon quality-icon-blue">
+            <i class="bi bi-tree-fill"></i>
+          </div>
+          <h5>Green Focused</h5>
+          <p>Passionate about renewable energy combined with technology innovation.</p>
+        </div>
+      </div>
+      <div class="col-md-4 slide-up stagger-5">
+        <div class="quality-card">
+          <div class="quality-icon quality-icon-orange">
+            <i class="bi bi-laptop-fill"></i>
+          </div>
+          <h5>Tech Skilled</h5>
+          <p>Proficient in Python and well-versed in IT systems, tools, and technologies.</p>
+        </div>
+      </div>
+      <div class="col-md-4 slide-up stagger-6">
+        <div class="quality-card">
+          <div class="quality-icon quality-icon-blue">
+            <i class="bi bi-wrench-adjustable"></i>
+          </div>
+          <h5>Hard Working</h5>
+          <p>Dedicated and hands-on, with a strong work ethic and commitment to quality outcomes.</p>
+        </div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="Pics/Electrician.jpg" alt="Innovationz Electrical Company">
-        <p><strong>Innovationz Electrical</strong></p>
-        <p>Senior Solar Electrician</p>
-        <p>October 2022 - October 2020</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="Pics/solar_city.jpg" alt="Solar City Company">
-        <p><strong>Solar City</strong></p>
-        <p>Electrician Supervisor</p>
-        <p>October 2020 - June 2018</p>
-      </div>
-    </div>
-    </div>
-  </div><br>
-  
-<!-- Thoughts section -->
-  <h2 class="thoughts">Thoughts That Power My Work</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-    </ol>
-
-    <!-- slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"Every watt generated from the sun is a step toward a cleaner tomorrow."<br><span>My Thoughts in Motion</span></h4>
-      </div>
-      <div class="item">
-        <h4>"The future is electric—and it's powered by the sun."<br><span>Engineering a better tomorrow</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Innovation in energy isn't optional—it's essential."<br><span>A guiding principle in my life</span></h4>
-      </div>
-      <div class="item">
-        <h4>"We don't inherit the Earth from our ancestors, we borrow it from our children."<br><span>Sustainability starts with intention</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Electricity is the lifeblood of modern life—let's make it clean."<br><span>A vision for clean energy</span></h4>
-      </div>
-      <div class="item">
-        <h4>"The sun rises every day—so should our commitment to renewable energy."<br><span>Solar Thinking: My Perspective</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-</div>
+</section>
 
-
-<!-- (Contact Section - References) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">My Contact Details</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p><i class="bi bi-person-circle"></i></span> Nicolas Diacono </p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Mt Pleasant, Christchurch,NZ </p>
-      <p><span class="glyphicon glyphicon-envelope"></span> Nidiaco03@gmail.com</p>
+<!-- Thoughts Carousel Section -->
+<section class="thoughts-section">
+  <div class="container">
+    <div id="thoughtsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#thoughtsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#thoughtsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#thoughtsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#thoughtsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#thoughtsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#thoughtsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner py-5">
+        <div class="carousel-item active">
+          <div class="thought-slide">
+            <i class="bi bi-quote"></i>
+            <h4>Every watt generated from the sun is a step toward a cleaner tomorrow.</h4>
+            <span class="thought-attribution">My Thoughts in Motion</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="thought-slide">
+            <i class="bi bi-quote"></i>
+            <h4>The future is electric &mdash; and it's powered by the sun.</h4>
+            <span class="thought-attribution">Engineering a Better Tomorrow</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="thought-slide">
+            <i class="bi bi-quote"></i>
+            <h4>Innovation in energy isn't optional &mdash; it's essential.</h4>
+            <span class="thought-attribution">A Guiding Principle in My Life</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="thought-slide">
+            <i class="bi bi-quote"></i>
+            <h4>We don't inherit the Earth from our ancestors, we borrow it from our children.</h4>
+            <span class="thought-attribution">Sustainability Starts with Intention</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="thought-slide">
+            <i class="bi bi-quote"></i>
+            <h4>Electricity is the lifeblood of modern life &mdash; let's make it clean.</h4>
+            <span class="thought-attribution">A Vision for Clean Energy</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="thought-slide">
+            <i class="bi bi-quote"></i>
+            <h4>The sun rises every day &mdash; so should our commitment to renewable energy.</h4>
+            <span class="thought-attribution">Solar Thinking: My Perspective</span>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#thoughtsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#thoughtsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
+</section>
+
+<!-- Record of Achievement Section -->
+<section id="roa" class="section-padding bg-light">
+  <div class="container text-center">
+    <div class="slide-up">
+      <h6 class="section-subtitle">Credentials</h6>
+      <h2 class="section-title">New Zealand Record of Achievement</h2>
+      <p class="mb-4">Download my official Record of Achievement from the New Zealand Qualifications Authority.</p>
+      <a href="ROA/ROA_Nicolas_Diacono.pdf" download target="_blank" rel="noopener noreferrer" class="btn btn-roa">
+        <i class="bi bi-file-earmark-pdf-fill me-2"></i>Download PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5 slide-up">
+      <h6 class="section-subtitle">Get in Touch</h6>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="row g-4 slide-up">
+          <div class="col-md-4">
+            <div class="contact-card text-center">
+              <i class="bi bi-person-circle"></i>
+              <h6>Name</h6>
+              <p>Nicolas Diacono</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-card text-center">
+              <i class="bi bi-geo-alt-fill"></i>
+              <h6>Location</h6>
+              <p>Mt Pleasant, Christchurch, NZ</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-card text-center">
+              <i class="bi bi-envelope-fill"></i>
+              <h6>Email</h6>
+              <p><a href="mailto:Nidiaco03@gmail.com">Nidiaco03@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<div class="map-section">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44970.02782682391!2d172.61607287589538!3d-43.523518676642745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d322f4863c5ed01%3A0x500ef8684799945!2sChristchurch!5e0!3m2!1sen!2snz!4v1757640334861!5m2!1sen!2snz" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
-
-
-<!-- Image Christchurch Map -->
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44970.02782682391!2d172.61607287589538!3d-43.523518676642745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d322f4863c5ed01%3A0x500ef8684799945!2sChristchurch!5e0!3m2!1sen!2snz!4v1757640334861!5m2!1sen!2snz" width="100%" height="500" style="border: 1px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
+<!-- Footer -->
+<footer class="site-footer text-center">
+  <a href="#myPage" class="back-to-top" title="Back to Top">
+    <i class="bi bi-chevron-up"></i>
   </a>
-  <p>Nicolas Diacono 
-
-    
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/nicolas-diacono" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/Nidiaco" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="mailto:Nidiaco03@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+  </div>
+  <p>&copy; 2025 Nicolas Diacono. All rights reserved.</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 
 </body>
